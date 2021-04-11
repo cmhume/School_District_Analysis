@@ -130,13 +130,14 @@ The results from the original school district analysis are available here: https
 ##### Updated school summary:
   
   
-![updated_school_summary](https://user-images.githubusercontent.com/78699521/114321864-01446000-9ad2-11eb-9a63-99308480c24d.png)
+![updated_school_summary](https://user-images.githubusercontent.com/78699521/114325162-7ff5c900-9ae3-11eb-8ec3-4cd001fc410a.png)
 
     
 ##### Original school summary:
   
   
-![original_school_summary](https://user-images.githubusercontent.com/78699521/114278267-c9f78580-99e3-11eb-983f-974f4b5ede36.png)
+![original_school_summary](https://user-images.githubusercontent.com/78699521/114325152-73717080-9ae3-11eb-874d-e99da450739a.png)
+
 
 
 #### Top five schools-
