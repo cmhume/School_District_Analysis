@@ -6,7 +6,7 @@
 ## Overview
 
 
-The purpose of this analysis was to redo a previously completed school district analysis, removing student scores that appeared to be altered.  All of the ninth grade math and reading scores for Thomas High School shown in the students_complete.csv file were replaced with NaNs and the school district analysis was run again using only the math and reading scores for tenth through twelth graders for Thomas High School.  The results were compared with the original school district analysis that included Thomas High School's ninth grade scores to note the impact of the possibly altered scores on Thomas High School's performance.  In both analyses, the data from the schools_complets.csv and students_complete.csv were merged into one dataframe in jupyter notebook to show the name of the school, the school type, total number of students, the total school budget, the average math score, the average reading score, the percent passing math, the percent passing reading, and the percent of overall passing.  Fifteen schools and a total of 39,170 students (before removing Thomas High School's ninth grade scores) were included in the analysis.  From this data frame, other dataframes and analyses were performed including, the district summary, the school summary, top five performing schools, bottom five performing schools, average math score by grade level for each school, average reading score by grade level for each school, scores by school spending per student, scores by school size, and scores by school type.  Jupyter Notebook in Anaconda's "PythonData" environment was used to perform the updated school district analysis using the blue print from the original school district.  The Pandas library and python language were also used in this analysis.
+The purpose of this analysis was to redo a previously completed school district analysis, removing student scores that appeared to be altered.  All of the ninth grade math and reading scores for Thomas High School shown in the students_complete.csv file were replaced with NaNs and the school district analysis was run again using only the math and reading scores for tenth through twelfth graders for Thomas High School.  The results were compared with the original school district analysis that included Thomas High School's ninth grade scores to note the impact of the possibly altered scores on Thomas High School's performance.  In both analyses, the data from the schools_complets.csv and students_complete.csv were merged into one dataframe in jupyter notebook to show the name of the school, the school type, total number of students, the total school budget, the average math score, the average reading score, the percent passing math, the percent passing reading, and the percent of overall passing.  Fifteen schools and a total of 39,170 students (before removing Thomas High School's ninth grade scores) were included in the analysis.  From this data frame, other dataframes and analyses were performed including, the district summary, the school summary, top five performing schools, bottom five performing schools, average math score by grade level for each school, average reading score by grade level for each school, scores by school spending per student, scores by school size, and scores by school type.  Jupyter Notebook in Anaconda's "PythonData" environment was used to perform the updated school district analysis using the blue print from the original school district.  The Pandas library and python language were also used in this analysis.
 
 
 ## Resources
@@ -54,20 +54,19 @@ The results from the original school district analysis are available here: https
 * ### District Summary
 
 
-  The updated district summary had a lower average math score (78.9 compared to 79), a lower % passing math (74.8%, compared to 75%), a lower % passing reading (85.7%, compared   to 86%) and a lower overall passing %(64.9%, compared to 65%) when compared with the original district summary.
+  The updated district summary had a lower average math score (78.9 compared to 79), while other values remained the same when rounded in comparison to the original district summary.
   
   
 * ### Thomas High School Summary 
 
 
-  The updated school summary for Thomas High School had a higher average reading score compared with the original school summary (83.9 compared to 83.8).  The other values were   the same compared with the original school summary. 
+  The updated school summary for Thomas High School had a higher average reading score compared with the original school summary (83.89 compared to 83.85 when rounded).  The   other values were slightly lower than the original values but did not change Thomas High School's performance when compared with other schools in the district.
   
   
 * ### Thomas High School's performance compared with other schools
 
 
-  Replacing the ninth graders' math and reading scores increased Thomas High School's overall performance, moving Thomas High School up from fourth top school to second top
-  school. 
+  Replacing the ninth graders' math and reading scores had no affect on Thomas High School's overall ranking among other schools, Thomas High School remained in the second position in top five schools when scores were not formatted.
   
   
 * ### The affect of replacing Thomas High School's ninth-grade scores with "NaN" on:
@@ -76,28 +75,28 @@ The results from the original school district analysis are available here: https
   *  #### math and reading scores by grade
   
   
-      Replacing the ninth-grade scores for Thomas High School with "nan" left the updated math_scores_by_grade and reading_scores_by_grade dataframes with "nan" in the 9th grade
-      column.
+      Replacing the ninth-grade scores for Thomas High School with "NaN" left the updated math_scores_by_grade and reading_scores_by_grade dataframes with "NaN" in the 9th grade
+      column and these scores were not used in the analysis.
       
       
   *  #### Scores by school spending
   
   
-      Replacing ninth-grade math and reading scores for Thomas High School with "nan" had no affect on the updated spending summary when compared with the original spending
+      Replacing ninth-grade math and reading scores for Thomas High School with "NaN" had no affect on the updated spending summary when compared with the original spending
       summary.
     
   
   *  #### Scores by school size
   
   
-      Replacing ninth-grade math and reading scores for Thomas High School with "nan" had no affect on the updated scores by school size dataframe when compared with the
+      Replacing ninth-grade math and reading scores for Thomas High School with "NaN" had no affect on the updated scores by school size dataframe when compared with the
       original scores by school size dataframe.
    
    
   *  #### Scores by school type
   
   
-      Replacing ninth-grade math and reading scores for Thomas High School with "nan" had no affect on the updated scores by school type dataframe when compared with the
+      Replacing ninth-grade math and reading scores for Thomas High School with "NaN" had no affect on the updated scores by school type dataframe when compared with the
       original scores by school type dataframe.
     
     
@@ -116,7 +115,7 @@ The results from the original school district analysis are available here: https
 ##### Updated district summary, without ninth grade reading and math scores:
   
 
-![new_district_summary](https://user-images.githubusercontent.com/78699521/114277299-784cfc00-99df-11eb-9046-1a33691ce600.png)
+![updated_district_summary](https://user-images.githubusercontent.com/78699521/114324996-76b82c80-9ae2-11eb-934c-2d1b4617e202.png)
 
 
 ##### Original district summary with ninth grade reading and math scores:
@@ -145,15 +144,16 @@ The results from the original school district analysis are available here: https
 
 ##### Updated top five schools:
   
-
-![updated_top_schools](https://user-images.githubusercontent.com/78699521/114321867-09040480-9ad2-11eb-9ea1-ab780716c5ea.png)
-
   
+![updated_top_schools](https://user-images.githubusercontent.com/78699521/114322961-e248cc80-9ad7-11eb-975b-d3b6f386c9ee.png)
+
+
 ##### Original top five schools:
-  
-![original_top_schools](https://user-images.githubusercontent.com/78699521/114278577-58b8d200-99e5-11eb-8976-90745bedd536.png)
-      
-      
+
+
+![original_top_schools](https://user-images.githubusercontent.com/78699521/114322953-db21be80-9ad7-11eb-8a03-908c74fcd786.png)
+
+     
 #### Math and reading scores by grade-
 
 
@@ -217,7 +217,7 @@ The results from the original school district analysis are available here: https
 ## Summary
 
 
-Removing the ninth grade scores from Thomas High School improved it's overall standing, moving the highshool up from fourth top school to second top school in the district.  The district summary had slightly lower values in average math score (78.9 compared to 79), % passing math(74.8%, compared to 75%), % passing reading (85.7% compared to 86%) and % overall passing (64.9% compared to 65%).  The average reading score in the district summary was the same in both analyses. In the per school summary dataframe, Thomas High School had a higher average reading score compared with the original analysis, while the other values remained the same.  This improvement raised Thomas High School's overall standing to second in the district.  The ninth grade scores by grade were not available for Thomas High School because they were replaced by NaNs at the beginning of the analysis.  This action prevented the analysis of ninth grade scores for Thomas High School.  The district spending summary, scores by school spending, score by school size and scores by school type were unchanged in the updated analysis compared with the original analysis.  Overall, the changes in the updated analysis compared to the original analysis  ranged from .1% to .3% different in the percent passing scores and a difference of  0.1 units from the original's average math score.  The changes were significant enough to change Thomas High School's standing in the district and lower some of the values in the district summary, but were not significant enough to change the average reading score, spending summary, scores by school size, or scores by school type.    
+In the updated analysis, the district summary had slightly lower values in average math score (78.9 compared to 79.0) while the other values when formatted remained the same.  In the per school summary dataframe, Thomas High School had a higher average reading score compared with the original analysis, while the other values were slightly lower.  Thomas High School remained in the second position of top schools in both analyses. The finding that the top five schools were all charter schools with student populations less than 2,300 was seen in both analyses.  Also, the lowest performing schools were the same in both analyses, all being district schools with large student populations. The ninth grade scores by grade were not available for Thomas High School in the updated analysis because they were replaced by NaNs.  This action prevented the analysis of ninth grade scores for Thomas High School. The tenth through twelfth grade scores for Thomas High School remained the same in both analyses.  Thomas High School's tenth to twelfth grade reading scores were slightly higher than their math scores.  The district spending summary, scores by school spending, score by school size and scores by school type were unchanged in the updated analysis compared with the original analysis.  Student scores and percent passing were the highest in schools with the lowest spending per student (<$584).  The lowest scores and lowest percent passing were seen in schools with the highest spending per student and largest student population size. Both small and medium sized schools had better scores and percent passing than large schools.  Interestingly, small schools had the highest average math and reading scores, but medium sized schools had the highest percent passing in all subjects.  This may suggest, some students in small schools have much higher than average math and reading scores while some students may be left behind.  Overall, the changes in the updated analysis compared to the original analysis did not change the conclusions about factors associated with increased school performance seen in the original analysis.  The changes were significant enough to change Thomas High School's per school summary values and lower some of the values in the district summary, but were not significant enough to change the school's performance ranking, spending summary, scores by school size, or scores by school type.    
 
 
 
