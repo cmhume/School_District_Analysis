@@ -70,7 +70,7 @@ The results from the original school district analysis are available here: https
   school. 
   
   
-* ### The affect of replacing Thomas High School's ninth-grade scores with "nan" on:
+* ### The affect of replacing Thomas High School's ninth-grade scores with "NaN" on:
 
 
   *  #### math and reading scores by grade
